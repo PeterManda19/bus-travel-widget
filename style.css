@@ -1,11 +1,37 @@
 /* CSS Styles */
-widgetContainer {
-	/* Add styling for the widget container */
+#widgetContainer {
+	text-align: center;
 }
-  
-  /* Add styles for input fields, labels, buttons, etc. */
-  
-resultContainer {
-	/* Add styling for the result container */
+
+#widgetContainer .image-wrapper {
+	display: inline-block;
+	vertical-align: middle;
+	width: 75%;
+	max-width: 300px;
+	margin-right: 20px;
 }
-  
+
+#widgetContainer .image-wrapper img {
+	width: 100%;
+	display: block;
+}
+
+#widgetContainer label {
+	display: block;
+	text-align: right;
+	width: 120px;
+	margin-bottom: 5px;
+}
+
+.section-heading {
+	text-align: left;
+}
+
+.display-box {
+	border: 1px solid #ccc;
+	padding: 5px;
+	display: block;
+	width: 150px;
+	margin: 10px auto;
+	text-align: center;
+}

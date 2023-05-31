@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Travel Widget</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <div id="widgetContainer">
+    <div class="image-wrapper">
+      <img src="placeholder-image.jpg" alt="Placeholder Image">
+    </div>
+    <h1>Bus Travel Widget</h1>
+  
+    <label for="pointsInput">Points:</label>
+    <input type="number" id="pointsInput" placeholder="Enter points" required>
+  
+    <label for="destinationSelect">Start location:</label>
+    <select id="destinationSelect">
+      <option value="Khayelitsha">Khayelitsha</option>
+      <option value="Dunoon">Dunoon</option>
+      <option value="Mitchells Plain">Mitchells Plain</option>
+    </select>
+  
+    <label for="timeSelect">Travel Time:</label>
+    <div class="image-wrapper">
+      <img src="placeholder-image.jpg" alt="Placeholder Image">
+    </div>
+    <label for="peakCheckbox">
+      <input type="checkbox" id="peakCheckbox">
+      Peak
+    </label>
+  
+    <div class="image-wrapper">
+      <img src="placeholder-image.jpg" alt="Placeholder Image">
+    </div>
+    <label for="offPeakCheckbox">
+      <input type="checkbox" id="offPeakCheckbox">
+      Off peak
+    </label>
+  
+    <label for="returnCheckbox">Return Trip:</label>
+    <input type="checkbox" id="returnCheckbox">
+  
+    <button id="calculateButton">Calculate</button>
+  
+    <div id="resultContainer">
+      <h2 class="section-heading">Calculations</h2>
+      <label for="singleTripsDisplay">Number of single trips:</label>
+      <div class="display-box" id="singleTripsDisplay">Display the number of trips</div>
+  
+      <label for="pricePerTripDisplay">Price per trip (single):</label>
+      <div class="display-box" id="pricePerTripDisplay">Display the price per trip</div>
+  
+      <label for="returnTripsDisplay">Number of return trips:</label>
+      <div class="display-box" id="returnTripsDisplay">Display the number of return trips</div>
+  
+      <label for="pricePerReturnTripDisplay">Price per trip (return):</label>
+      <div class="display-box" id="pricePerReturnTripDisplay">Display the price per trip</div>
+    </div>
+  </div>
+</body>
+</html>
