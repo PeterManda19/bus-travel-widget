@@ -11,7 +11,7 @@ function BusWidget() {
   
     // Calculate the cost per trip based on points and destination
     function costPerTrip(points, destination) {
-      return points * destinations[destination];
+      return points; // * destinations[destination];
     }
   
     // Calculate the total number of trips based on points, destination, and time

@@ -8,9 +8,9 @@ describe('BusWidget', function () {
 
   describe('costPerTrip', function () {
     it('should calculate the cost per trip correctly', function () {
-      const points = 10;
+      const points = 40;
       const destination = 'Khayelitsha';
-      const expectedCost = 10;
+      const expectedCost = 40;
 
       const cost = widget.costPerTrip(points, destination);
 
@@ -20,10 +20,10 @@ describe('BusWidget', function () {
 
   describe('totalTrips', function () {
     it('should calculate the total trips correctly', function () {
-      const points = 20;
+      const points = 25;
       const destination = 'Dunoon';
       const time = 'offPeak';
-      const expectedTotalTrips = 20;
+      const expectedTotalTrips = 25;
 
       const totalTrips = widget.totalTrips(points, destination, time);
 
@@ -63,7 +63,7 @@ describe('BusWidget', function () {
       const destination = 'Khayelitsha';
       const time = 'offPeak';
       const isReturn = true;
-      const expectedCost = 100;
+      const expectedCost = 80;
 
       const cost = widget.costPerReturnTrip(points, destination, time, isReturn);
 
@@ -85,7 +85,7 @@ describe('BusWidget', function () {
     it('should calculate the price based on time correctly for off-peak time', function () {
       const destination = 'Mitchells Plain';
       const time = 'offPeak';
-      const expectedPrice = 35;
+      const expectedPrice = 30;
 
       const price = widget.calculatePriceBasedOnTime(destination, time);
 
