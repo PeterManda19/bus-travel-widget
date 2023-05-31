@@ -6,7 +6,7 @@ function BusWidget() {
     const destinations = {
       "Khayelitsha": 40,
       "Dunoon": 25,
-      "Mitchells Plain": 35,
+      "Mitchells Plain": 30,
     };
   
     // Calculate the cost per trip based on points and destination
