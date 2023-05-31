@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bus Travel Widget</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
 
   <div id="widgetContainer">
     <div class="image-wrapper">
-      <img src="placeholder-image.jpg" alt="Placeholder Image">
+      <img src="placeholder-image.jpg" alt="">
     </div>
     <h1>Bus Travel Widget</h1>
   
@@ -26,30 +27,29 @@
     </select>
   
     <label for="timeSelect">Travel Time:</label>
-    <div class="image-wrapper">
-      <img src="placeholder-image.jpg" alt="Placeholder Image">
-    </div>
-    <label for="peakCheckbox">
+    <img src="placeholder-image.jpg" alt="">
+  
+    <div class="checkbox-label">
       <input type="checkbox" id="peakCheckbox">
-      Peak
-    </label>
-  
-    <div class="image-wrapper">
-      <img src="placeholder-image.jpg" alt="Placeholder Image">
+      <label for="peakCheckbox">Peak</label>
+      <img src="placeholder-image.jpg" alt="">
     </div>
-    <label for="offPeakCheckbox">
-      <input type="checkbox" id="offPeakCheckbox">
-      Off peak
-    </label>
   
-    <label for="returnCheckbox">
-    <input type="checkbox" id="returnCheckbox">Return Trip:
-    </label>
+    <div class="checkbox-label">
+      <input type="checkbox" id="offPeakCheckbox">
+      <label for="offPeakCheckbox">Off peak</label>
+    </div>
+  
+    <div class="checkbox-label">
+      <input type="checkbox" id="returnCheckbox">
+      <label for="returnCheckbox">Return Trip:</label>
+    </div>
   
     <button id="calculateButton">Calculate</button>
+    <h2 class="">Calculations</h2>
   
     <div id="resultContainer">
-      <h2 class="section-heading">Calculations</h2>
+      
       <label for="singleTripsDisplay">Number of single trips:</label>
       <div class="display-box" id="singleTripsDisplay">Display the number of trips</div>
   
@@ -62,6 +62,14 @@
       <label for="pricePerReturnTripDisplay">Price per trip (return):</label>
       <div class="display-box" id="pricePerReturnTripDisplay">Display the price per trip</div>
     </div>
+  
+    <footer>
+      <h3>@PeterManda19</h3>
+    </footer>
   </div>
+
+  <script src="./busTravelWidget.js"></script>
+  <script src="./busTravelWidget.dom.js"></script>
+  
 </body>
 </html>

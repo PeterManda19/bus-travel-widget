@@ -1,13 +1,16 @@
 /* CSS Styles */
 #widgetContainer {
 	text-align: center;
+	background-color: #669bbc;
+	width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 #widgetContainer .image-wrapper {
 	display: inline-block;
 	vertical-align: middle;
 	width: 75%;
-	max-width: 300px;
 	margin-right: 20px;
 }
 
@@ -34,4 +37,13 @@
 	width: 150px;
 	margin: 10px auto;
 	text-align: center;
+}
+
+.checkbox-label {
+	display: flex;
+	align-items: center;
+}
+
+.checkbox-label input[type="checkbox"] {
+	margin-left: 50px;
 }
