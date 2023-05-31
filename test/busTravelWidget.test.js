@@ -23,7 +23,7 @@ describe('BusWidget', function () {
       const points = 25;
       const destination = 'Dunoon';
       const time = 'offPeak';
-      const expectedTotalTrips = 25;
+      const expectedTotalTrips = 1;
 
       const totalTrips = widget.totalTrips(points, destination, time);
 
@@ -37,7 +37,7 @@ describe('BusWidget', function () {
       const destination = 'Mitchells Plain';
       const time = 'peak';
       const isReturn = true;
-      const expectedReturnTrips = 2;
+      const expectedReturnTrips = 1;
 
       const returnTrips = widget.returnTrips(points, destination, time, isReturn);
 
